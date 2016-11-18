@@ -1,0 +1,32 @@
+#main-content {
+    display: none;
+}
+
+.recipeImage {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+#recipe-list{
+    column-count: 2;
+}
+
+#recipe-list li {
+    list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#pageButtons{
+    text-align: center;
+
+
+}
+
+.templateList li{
+  list-style: none;
+}

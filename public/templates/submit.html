@@ -1,0 +1,43 @@
+<div id='root'>
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="text-center">Submit Recipe<br></h1> </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form id="recipeForm">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input ng-model = "recipe.name" type="text" name="name" class="form-control" placeholder = "Name of Recipe"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Ingredients</label>
+                        <input ng-model = "recipe.ingredients" type="text" name="ingredients" class="form-control" placeholder = "Ingredients seperated by commas"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea">Instructions</label>
+                        <textarea ng-model = "recipe.instructions" class="form-control" id="instructions" rows="3"></textarea>
+                    </div>
+                    <a href="" class ="btn-primary btn" id="submit_recipe" ng-click="combineSaveAndAdd()">Submit Recipe</a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

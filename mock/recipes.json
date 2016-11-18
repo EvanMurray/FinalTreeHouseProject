@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Omelet",
+    "ingredients": ["eggs", "cheese"],
+    "description": "Yummy eggs!"
+  },
+  {
+    "name": "Pizza",
+    "ingredients": ["pepperoni", "cheese", "pizza dough"],
+    "description": "pepperoni pizza!"
+  }
+]

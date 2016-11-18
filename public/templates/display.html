@@ -1,0 +1,16 @@
+<div ng-repeat="recipe in recipes track by recipe._id">
+  <div>
+    <label ng-hide="editing" ng-click="editing=true">Name: {{recipe.name}}</label><br>
+        <input ng-show="editing" ng-blur="editing = false" class="editing-label" type="text" ng-model="recipe.name" ng-change="recipe.edited = true"/>
+    <label ng-hide="editing" ng-click="editing=true">Ingredients: {{recipe.ingredients}}</label><br>
+        <input ng-show="editing" ng-blur="editing = false" class="editing-label" type="text" ng-model="recipe.ingredients" ng-change="recipe.edited = true"/>
+    <label ng-hide="editing" ng-click="editing=true">Instructions: {{recipe.instructions}}</label><br>
+        <input ng-show="editing" ng-blur="editing = false" class="editing-label" type="text" ng-model="recipe.instructions" ng-change="recipe.edited = true"/>
+  </div>
+      <div class="actions">
+        <a href="" ng-click ='saveRecipes()'>Save</a>
+        <a href="" class="delete" ng-click='deleteRecipe(recipe, $index)'>Delete</a>
+      </div>
+
+
+</div>
